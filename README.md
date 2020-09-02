@@ -1,2 +1,1 @@
-# examplesJS
-Clase programacion avanzada
+Ejemplos de aprendizaje sobre javascript
