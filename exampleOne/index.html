@@ -1,12 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Variables</title>
-    <script src="js/variables.js"></script>
+    <title>Operaciones Aritmeticas</title>
+    <!-- <script src="js/variables.js"></script> -->
+    <script src="js/operArit.js"></script>
 </head>
+
 <body>
-    
+    <h1>Formulario Operaciones Aritmeticas</h1>
+    <form>
+        <label for="nUno"></label>
+        <input type="text" name="nUno" id="nUno">
+        <br><br>
+        <label for="nDos"></label>
+        <input type="text" name="nUno" id="nDos">
+        <br><br>
+        <button type="button" onclick="sumar()">Calcular Suma</button>
+        <button type="button" onclick="multiplicar()">Calcular Multiplicación</button>
+        <p>Resultado:
+            <textarea id="resulOperacion" cols="5" rows="1"></textarea>
+        </p>
+    </form>
+    <hr><br><br>
+    <form>
+        <fieldset>
+            <legend>Formulario para calcular área de un triángulo</legend>
+            <label for="b">Base</label>
+            <input type="text" name="b" id="b">
+            <br><br>
+            <label for="h">Altura</label>
+            <input type="text" name="h" id="h">
+            <br><br>
+            <button type="button" onclick="triangulo()">Calcular</button>
+            <p>Resultado:
+                <textarea id="resul" cols="5" rows="1"></textarea>
+            </p>
+        </fieldset>
+    </form>
+    <hr><br><br>
+    <form>
+        <fieldset>
+            <legend>Formulario para calcular área de un círculo</legend>
+            <label for="radio">Radio</label>
+            <input type="text" name="radio" id="radio">
+            <br><br>
+            <button type="button" onclick="circulo()">Calcular</button>
+            <p>Resultado:
+                <textarea id="resulCir" cols="5" rows="1"></textarea>
+            </p>
+        </fieldset>
+    </form>
 </body>
+
 </html>
