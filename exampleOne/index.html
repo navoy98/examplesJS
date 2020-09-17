@@ -81,7 +81,8 @@
             <button type="button" onclick="mostrarMensajeDos()">Mostrar</button>
         </form>
     </section>
-    <br><hr>
+    <br>
+    <hr>
     <section>
         <h2>If & Case</h2>
         <form>
@@ -91,13 +92,51 @@
             <button type="button" onclick="mostrarMensajeTres()">Price</button>
         </form>
     </section>
-    <br><hr>
+    <br>
+    <hr>
     <section>
         <h2>Functions & param</h2>
         <form>
             <button type="button" onclick="On_Off(1)">On</button>
             <button type="button" onclick="On_Off(0)">Of</button>
         </form>
+    </section>
+    <br>
+    <hr>
+    <section>
+        <h2>Bucle For</h2>  
+        <script>
+            // for (let people = 1; people <= 3; people++) {
+            //     let age = prompt("Enter Age: ");
+            //     let ageParameter = 18;
+            //     let message = (age >= ageParameter) ? "Adult" : "Young";
+            //     alert(message);
+            // }
+
+            //Ejemplo de arrays
+            // let cars = ["Ford", "Honda", "Mazda", "Chevrolet"];
+
+            // for (let brands = 0; brands < cars.length; brands++) {
+            //     const viewCars = cars[brands] + "<br>";
+            //     document.write(viewCars);
+                
+            // }
+        </script>
+    </section>
+    <hr><br>
+    <section>
+        <h2>Bucle while</h2>
+        <script>
+            let student = () =>{
+                let studentName = "";
+                let paramName = "NN";
+                while (studentName.toUpperCase != paramName) {
+                    studentName = prompt("Enter student name:")
+                    alert(`Your name is ${studentName} registered!`);
+                }
+            }
+            student();
+        </script>
     </section>
 </body>
 

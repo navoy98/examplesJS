@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicio1</title>
     <script src="js/ejercicio1.js"></script>
 </head>
+
 <body>
-    <center><h1>HOTEL NAVOY</h1></center>
+    <center>
+        <h1>HOTEL NAVOY</h1>
+    </center>
     <section>
         <table border="1">
             <caption>TARIFAS</caption>
@@ -27,7 +31,8 @@
             </tbody>
         </table>
     </section>
-    <br><hr>
+    <br>
+    <hr>
     <section>
         <form>
             <label>Seleccione su tarifa</label>
@@ -42,8 +47,16 @@
             <br><br>
             <button type="button" onclick="calcularCosto()">Calcular Costo</button>
             <br><br>
-            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <label>Precio sin IVA</label>
+            <input type="text" readonly id="totalSin">
+            <br>
+            <label>Precio con IVA</label>
+            <input type="text" readonly id="totalCon">
+            <br>
+            <label>Precio con Descuento</label>
+            <input type="text" readonly id="totalDesc">
         </form>
     </section>
 </body>
+
 </html>
