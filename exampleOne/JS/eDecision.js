@@ -48,11 +48,71 @@ function mostrarMensajeDos() {
     // }
 
     /// IF con operador lógico OR (||)
-    if (edadP <= parametroEdad || estaturaP >= parametroEstatura || pesoP == parametroPeso) {
-        mensajeDecision = "Apto para realizar el deporte";
-    }else{
-        mensajeDecision = "No apto para realizar el deporte";
-    }
+    // if (edadP <= parametroEdad || estaturaP >= parametroEstatura || pesoP == parametroPeso) {
+    //     mensajeDecision = "Apto para realizar el deporte";
+    // }else{
+    //     mensajeDecision = "No apto para realizar el deporte";
+    // }
 
     alert(mensajeDecision);
+}
+
+function mostrarMensajeTres(){
+    let productName = document.getElementById('productName').value;
+    let price = 0;
+
+    // const PRODUCT_ONE = 'A';
+    // const PRODUCT_TWO = 'B';
+    // const PRODUCT_THREE = 'C';
+
+    // if (productName.toUpperCase() == PRODUCT_ONE) {
+    //     price = 2000;
+    //     alert(price);
+    // }else{
+    //     if (productName.toUpperCase() == PRODUCT_TWO) {
+    //         price = 2200;
+    //         alert(price);
+    //     }else{
+    //         if (productName.toUpperCase() == PRODUCT_THREE) {
+    //             price = 1800;
+    //             alert(price);
+    //         }else{
+    //             alert("¡Product Invalid!");
+    //         }
+    //     }    
+    // }
+
+        //alert(price);
+
+    switch (productName.toUpperCase()) {
+        case 'A':
+            price = 2000;
+            break;
+            case 'B':
+            price = 2200;
+            break;
+            case 'C':
+            price = 1800;
+            break;
+        default:
+            alert("¡Product Invalid!");
+            break;
+    }
+    alert(price);
+}
+
+// function On_Off(interruptor){
+//Ejemplo con funcion flecha
+let On_Off = interruptor =>{
+    let pic;
+
+    // if (interruptor == 0) {
+    //     alert('OFF');
+    // } else {
+    //     alert('ON');
+    // }
+
+    //Ejemplo con operador terniario
+    let mensaje = (interruptor == 0) ? "OFF" : "ON";
+    alert(mensaje);
 }

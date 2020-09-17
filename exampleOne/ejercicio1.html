@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio1</title>
+    <script src="js/ejercicio1.js"></script>
+</head>
+<body>
+    <center><h1>HOTEL NAVOY</h1></center>
+    <section>
+        <table border="1">
+            <caption>TARIFAS</caption>
+            <tbody>
+                <tr>
+                    <td>Individual</td>
+                    <td>$2.500</td>
+                </tr>
+                <tr>
+                    <td>Doble</td>
+                    <td>$4.600</td>
+                </tr>
+                <tr>
+                    <td>Familiar</td>
+                    <td>$5.200</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <br><hr>
+    <section>
+        <form>
+            <label>Seleccione su tarifa</label>
+            <select name="tarifas" id="tarifas">
+                <option value="1">Individual</option>
+                <option value="2">Doble</option>
+                <option value="3">Familiar</option>
+            </select>
+            <br><br>
+            <label>Cantidad de Días</label>
+            <input type="text" id="dias">
+            <br><br>
+            <button type="button" onclick="calcularCosto()">Calcular Costo</button>
+            <br><br>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+        </form>
+    </section>
+</body>
+</html>
