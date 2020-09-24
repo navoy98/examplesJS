@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2</title>
+</head>
+
+<body>
+    <center>
+        <h1>Almacen NAVOY</h1>
+    </center>
+    <br>
+    <section>
+        <table border="1">
+            <tbody>
+                <tr>
+                    <th>ARTICULO</th>
+                    <th>PRECIO DE VENTA</th>
+                    <th>Código Artículo</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <td>Zapatos</td>
+                    <td>$350.000</td>
+                    <td>1</td>
+                    <td>- 0.8%</td>
+                </tr>
+                <tr>
+                    <td>Tenis</td>
+                    <td>$280.000</td>
+                    <td>2</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Camisetas</td>
+                    <td>$175.000</td>
+                    <td>3</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Jeans</td>
+                    <td>$200.000</td>
+                    <td>4</td>
+                    <td>+ 6.2%</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <section>
+        <script>
+            let almacen = () => {
+                let codigo = 0;
+                let articulo = 0;
+                let totalArt = 0;
+                let promedio = 0;
+                let jeanMas = 0;
+                let zapatosMenos = 0;
+                let count = -1;
+
+                do {
+                    codigo = parseInt(prompt('Ingresa el código del artículo, si quieres dejar de comprar ingresa 0'));
+                    switch (codigo) {
+                        case 1:
+                            alert('Has agregado un par de Zapatos');
+                            articulo = 350000;
+                            zapatosMenos = articulo * 0.08;
+                            break;
+                        case 2:
+                            alert('Has agregado un par de Tenis');
+                            articulo = 280000;
+                            break;
+                        case 3:
+                            alert('Has agregado una Camiseta');
+                            articulo = 175000;
+                            break;
+                        case 4:
+                            alert('Has agregado un Jean');
+                            articulo = 200000;
+                            jeanMas = articulo * 6.2;
+                            break;
+                        default:
+                            alert('Este artículo no está disponible');
+                            break;
+                    }
+                    totalArt = articulo + totalArt;
+                    count++;
+                } while (codigo != 0);
+                promedio = totalArt / count;
+                console.log(`El total de la compra es: ${totalArt}`);
+                console.log(`El promedio de la venta es: ${promedio}`);
+                console.log(`El nuevo precio de los Jean es: ${jeanMas}`);
+                console.log(`El nuevo precio de los Zapatos es: ${zapatosMenos}`);
+            }
+            almacen();
+        </script>
+    </section>
+</body>
+
+</html>
